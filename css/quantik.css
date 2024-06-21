@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #010f1f;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: #010f1f;
+}
+
+th, td{
+    border: solid 1px white;
+}
+h1{
+    font-size: 6em;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    color: white;
+    letter-spacing: 4px;
+}
+
+span{
+    color: white;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+button:hover{
+    cursor: pointer;
+    border: solid 2px white;
+}
+
+.plateau{
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ligne{
+    display:flex;
+    flex-flow: row;
+}
+
+.titreContainer{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.contentContainer{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.centered{
+    padding-top: 10%;
+}
+
+.login{
+    border: solid 1px lightgray;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#titreLogin{
+    margin-top: 10px;
+    margin-bottom: 6%;
+}
+
+#inputLogin{
+    height: 30px;
+    background: lightslategray;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    color: white;
+}
+
+#formLogin{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder{
+    color: lightgray;
+}
+
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.largeButton{
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #FB5C00;
+    border: none;
+    font-size: larger;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.smallButton{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #FB5C00;
+    border: none;
+    color: white;
+    margin-left: 8px;
+    padding-top:calc(25px/7) ;
+}
+
+.cubeW{
+    background-image: url("../img/carreJaune.png");
+    background-color: transparent;
+}
+
+.cylindreW{
+    background-image: url("../img/cylindreJaune.png");
+    background-color: transparent;
+}
+
+.sphereW{
+    background-image: url("../img/sphereJaune.png");
+    background-color: transparent;
+}
+
+.coneW{
+    background-image: url("../img/triangleJaune.png");
+    background-color: transparent;
+}
+
+.cubeB{
+    background-image: url("../img/carreOrange.png");
+    background-color: transparent;
+}
+
+.cylindreB{
+    background-image: url("../img/cylindreOrange.png");
+    background-color: transparent;
+}
+
+.sphereB{
+    background-image: url("../img/sphereOrange.png");
+    background-color: transparent;
+}
+
+.coneB{
+    background-image: url("../img/triangleOrange.png");
+    background-color: transparent;
+}
+
+.voidB, voidW{
+    background-color: transparent;
+}
+
+.disabled{
+    background-color: #FD6262;
+}
+
+.disabled:hover{
+    cursor: not-allowed;
+}
+
+.boutonPiece{
+    height : 79px;
+    width : 79px;
+    margin : 0;
+    padding : 0;
+    border : 0 none;
+    vertical-align : middle;
+    background-size: 70px;
+    background-repeat : no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+.formHome{
+    margin-bottom: 6px;
+}
+
+.red{
+    background-color: #FD6262;
+}
+
+.message{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    background-color: #FD6262;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+@keyframes disparation {
+    0% {
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.messageDisparation {
+    animation: disparation 4s forwards;
+}
